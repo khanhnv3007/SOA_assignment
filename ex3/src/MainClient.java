@@ -13,7 +13,7 @@ public class MainClient {
     	fromCur = fromCur.toUpperCase();
     	Currency fromCurrency = Currency.fromValue(fromCur);
     	
-    	System.out.println("Please enter the source currency");
+    	System.out.println("Please enter the destination currency");
     	String toCur = scanner.next();
     	toCur = toCur.toUpperCase();
     	Currency toCurrency = Currency.fromValue(toCur);
@@ -25,6 +25,6 @@ public class MainClient {
     	double rate = port.conversionRate(fromCurrency, toCurrency);
     	       
     	//Use the generated objects in the result String placeName = forecasts.getPlaceName();
-    	System.out.println(rate);
+    	System.out.println(String.format("1 %s equals %f %s", fromCur, rate, toCur));
 	}
 }

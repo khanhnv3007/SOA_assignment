@@ -6,9 +6,9 @@ public class PriceServer implements Price {
     public PriceServer(){};
     public String getPrice(String book_id){
     	String price = new String();
-    	if(book_id == "978-0071605526") price = "$25.00";
-    	if(book_id == "978-0321815736") price = "$46.29";
-    	if(book_id == "978-0321718334") price = "$39.99";
+    	if(book_id.contains("978-0071605526")) price = "$25.00";
+    	if(book_id.contains("978-0321815736")) price = "$46.29";
+    	if(book_id.contains("978-0321718334")) price = "$39.99";
         return price;
     }
 
