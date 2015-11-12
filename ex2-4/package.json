@@ -1,5 +1,5 @@
 {
-  "name": "ex3",
+  "name": "ex2+4",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,9 @@
   "license": "ISC",
   "homepage": "",
   "dependencies": {
+    "body-parser": "^1.13.1",
     "express": "^4.13.0",
-    "body-parser": "^1.13.1"
+    "request": "^2.65.0",
+    "xml2js": "^0.4.15"
   }
 }
